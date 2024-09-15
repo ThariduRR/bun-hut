@@ -1,0 +1,313 @@
+html {
+    scroll-behavior: smooth;
+  
+  }
+  
+  * {
+          margin: 0;
+          border: 0;
+          outline: 0;
+          font-size: 100%;
+          vertical-align: baseline;
+          background: transparent;
+          text-decoration: none;
+      }
+  
+      body{
+        background-image: url("src/bg.png");
+        background-color: #f3f3f5;
+        background-repeat: repeat-y;
+        background-size: auto;
+      }
+  
+      /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF6969;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C24F4F;
+  }
+  
+  .heading{
+    font-weight: 1000px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .line{
+    text-align: center;
+    width:70px;
+    height: 5px;
+    background-color: rgb(255, 105, 105);;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .nav nav ul{
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav ul li{
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    Left:0;
+    height: 100%;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul{
+    text-decoration: none;
+  }
+  
+  .logo{
+    text-align: left;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 0;
+  }
+  
+  .logo:hover{
+    background-color: white !important;
+    cursor: default;
+  }
+  
+  .logo img{
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+  }
+  
+  
+  .logo span{
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  
+  .nav span{
+    position: relative;
+  }
+  
+  .nav a{
+    position: relative;
+    color: rgba(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .fas{
+    position: relative;
+    margin-right: 20px;
+    width: 70px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .nav-item{
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  
+  .nav a:hover{
+    color: white;
+    background: #FF6969;
+    transition: all 0.4s ease;
+  }
+  
+  nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+  }
+  
+  .logout{
+    position: absolute !important;
+    bottom: 0;
+  }
+  
+  
+  
+  
+  .rows{
+    display: block;
+  }
+  
+  
+  .managerTable {
+    text-align: center;
+    margin:auto;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .managerTable h1{
+    margin-bottom: 50px;
+    margin-left: 40px;
+    color: #1b9bff;
+    font-family: 'Poppins', sans-serif;
+  
+  
+  }
+  
+  .managerTable table{
+    border: none;
+    border-collapse: collapse;
+    margin:auto;
+    color: #595959;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  .managerTable table th{
+    width:250px;
+    text-align: center;
+    padding:20px;
+  }
+  
+  .managerTable tr {
+      border-top: 0px solid #595959;
+      border-radius: 10px;
+    }
+  
+  
+  
+  .managerTable tr:nth-child(even) {
+     background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .managerTable tr:first-child {
+      border-top: none;
+    }
+  
+  .managerTable table td{
+    border: none !important;
+    text-align: center;
+    padding:15px;
+  }
+  
+  
+  .regForm{
+    text-align: center;
+    margin-bottom: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+  
+  }
+  
+  .regFormOverlay{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 100px;
+  }
+  
+  .regFormOverlay h1{
+    font-weight: 1000px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    color: white;
+  }
+  
+  .regFormOverlay p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    color: white;
+  }
+  
+  .regFormOverlay input[type=text], input[type=submit], input[type=multiline], input[type=password] {
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .regFormOverlay textarea{
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .regFormOverlay input[type=text], input[type=multiline], input[type=password] {
+    margin: 20px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .regFormOverlay input[type=submit]{
+    margin: 10px;
+    color: white;
+    background-color: #FF6969;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .regFormOverlay input[type=submit]:hover{
+    background-color: #C24F4F;
+  }
+  

@@ -1,0 +1,273 @@
+.navbar-profile{
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  
+  .navbar-profile a{
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    margin-top: 59px;
+    margin-right:60px;
+  }
+  
+  .navbar-profile a img{
+    margin-left: 90%;
+    padding: 10px;
+    background-color: #ff4757;
+    width: 40px;
+    border-radius: 10px;
+  }
+
+.content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(5px);
+    position: fixed ;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .sticky + .content {
+    padding-top: 100px;
+  }
+  
+  .banner{
+    margin-top: 10px;
+  }
+  
+  .banner-img{
+    margin-top: 20px;
+    float: right;
+    width: 40%;
+    height: 60%;
+  }
+  
+  .banner-img img{
+    float: right;
+    margin-right: 50px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: biani 4.5s linear infinite alternate;
+    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+  }
+
+  
+  .banner-text{
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+  
+  .banner-text h1{
+    font-size: 400%;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .banner-paragraph{
+    margin-right: 700px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  
+  .banner-paragraph p{
+    color: azure;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .banner-button{
+    margin-top: 45px;
+    margin-left: 70px;
+  }
+  
+  .banner-button a{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgb(241, 76, 76);
+    color: #4D4949;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  .banner-button a:hover{
+    color: white;
+    background-color: #FF6969;
+  
+  }
+  
+  .banner-button a::before{
+    border-radius: 30px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#FF6969;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 1;
+    transform: scaleX(0);
+  }
+  
+  .banner-button a:hover::before{
+    transform: scaleX(1);
+  }
+
+  /*Animation keyframes*/
+
+@keyframes biani {
+    0% {
+        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+    }
+    25% {
+        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+    }
+    50% {
+        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+    }
+    100% {
+        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+    }
+}
+
+
+
+.slideshow{
+    width: 100%;
+  }
+  
+  .slideshow h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+  }
+  
+  .slideshow img{
+    width: 80%;
+    text-align: center;
+  
+  }
+  
+  
+  
+  .slideContainer{
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .swiper{
+    width: 80%;
+    height: fit-content;
+  }
+  
+  .swiper-slide{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  
+  .swiper-slide img{
+    width: 900px;
+    height: 600px;
+    border-radius: 30px;
+  }
+  
+  .swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #FF6969;
+  }
+  
+  .swiper .swiper-pagination-bullet-active{
+    background: #FF6969;
+  }
+
+.footer {
+    overflow: hidden;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 450px;
+    background-color: #E3E3E3;
+    text-align: center;
+  }
+  
+  .footer h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .footer p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+  }
+  
+  
+  .footer1{
+    margin-left: 70px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 30%;
+    display: inline-block;
+  }
+  
+  .footer1 img{
+    display: inline-block;
+    border:0;
+    transition: 0.5s;
+    padding: 30px;
+    margin-top: 10px;
+    width: 60px;
+  }
+  
+  .footer1 img:hover{
+    filter: drop-shadow(5px 5px 3px #777);
+    transform: scale(1.1);
+  
+  }
+  
+  
+  .footer2{
+      float: left;
+    margin-top: 30px;
+    width: 27%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .footerMap{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .footer3{
+      float: left;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 30px;
+   display: inline-block;
+  }

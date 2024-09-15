@@ -1,0 +1,102 @@
+.content {
+    padding: 16px;
+  }
+  
+  
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(5px);
+    position: fixed ;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .sticky + .content {
+    padding-top: 100px;
+  }
+  
+  
+  .regForm{
+    background-image: url("src/regsiterBG.jpg");
+    text-align: center;
+    margin-bottom: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+  
+  }
+  
+  .regFormOverlay{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 100px;
+  }
+  
+  .regFormOverlay h1{
+    font-weight: 1000px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    color: white;
+  }
+  
+  .regFormOverlay p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    color: white;
+  }
+  
+  .regFormOverlay input[type=text], input[type=submit], input[type=multiline], input[type=password] {
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .regFormOverlay textarea{
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .regFormOverlay input[type=text], input[type=multiline], input[type=password] {
+    margin: 20px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .regFormOverlay input[type=submit]{
+    margin: 10px;
+    color: white;
+    background-color: #FF6969;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .regFormOverlay input[type=submit]:hover{
+    background-color: #C24F4F;
+  }

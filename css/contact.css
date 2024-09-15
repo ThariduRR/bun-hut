@@ -1,0 +1,312 @@
+html {
+    scroll-behavior: smooth;
+  
+  }
+  
+  * {
+          margin: 0;
+          border: 0;
+          outline: 0;
+          font-size: 100%;
+          vertical-align: baseline;
+          background: transparent;
+      }
+  
+      body{
+        background-image: url("src/bg.png");
+        background-color: #f3f3f5;
+        background-repeat: repeat-y;
+        background-size: auto;
+      }
+  
+      /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF6969;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C24F4F;
+  }
+  
+  
+ /* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+  
+.navbar-profile{
+    float: right;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  
+  .navbar-profile a{
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    margin-top: 59px;
+    margin-right:60px;
+  }
+  
+  .navbar-profile a img{
+    padding: 10px;
+    background-color: #ff4757;
+    width: 40px;
+    border-radius: 10px;
+  }
+  
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(5px);
+    position: fixed ;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .sticky + .content {
+    padding-top: 100px;
+  }
+  
+  .content h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+  }
+  
+  .line{
+    text-align: center;
+    width:70px;
+    height: 5px;
+    background-color: rgb(255, 105, 105);;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  .regForm{
+    text-align: center;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+  
+  }
+  
+  .regFormOverlay{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+  }
+  
+  .regFormOverlay h1{
+    font-weight: 1000px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    color: white;
+  }
+  
+  .regFormOverlay p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    color: white;
+  }
+  
+  .regFormOverlay input[type=text], input[type=submit], input[type=multiline], input[type=password], input[type=file] {
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .regFormOverlay textarea{
+    resize: vertical;
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .regFormOverlay input[type=text], input[type=multiline], input[type=password], input[type=file]{
+    margin: 20px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .regFormOverlay select{
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  
+  .regFormOverlay input[type=submit]{
+    margin: 10px;
+    color: white;
+    background-color: #FF6969;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .regFormOverlay input[type=submit]:hover{
+    background-color: #C24F4F;
+  }
+  
+  
+  .footer {
+    overflow: hidden;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 450px;
+    background-color: #E3E3E3;
+    text-align: center;
+  }
+  
+  .footer h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .footer p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+  }
+  
+  
+  .footer1{
+    margin-left: 70px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 30%;
+    display: inline-block;
+  }
+  
+  .footer1 img{
+    display: inline-block;
+    border:0;
+    transition: 0.5s;
+    padding: 30px;
+    margin-top: 10px;
+    width: 60px;
+  }
+  
+  .footer1 img:hover{
+    filter: drop-shadow(5px 5px 3px #777);
+    transform: scale(1.1);
+  
+  }
+  
+  
+  .footer2{
+      float: left;
+    margin-top: 30px;
+    width: 27%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .footerMap{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .footer3{
+      float: left;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 30px;
+   display: inline-block;
+  }
+  
+  /*Animation keyframes*/
+  
+  @keyframes biani {
+      0% {
+          border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+      }
+      25% {
+          border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+      }
+      50% {
+          border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+      }
+      100% {
+          border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+      }
+  }
+  

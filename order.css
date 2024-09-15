@@ -1,0 +1,410 @@
+
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    background-color: rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(5px);
+    position: fixed ;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .sticky + .content {
+    padding-top: 100px;
+  }
+  
+  
+  
+  
+  .content button{
+    color: #ff6969;
+    margin-top:30px;
+    margin-right: 7%;
+    float: right;
+    transition: 0.25s;
+  }
+  
+  .content button:hover{
+    color: #C24F4F;
+  }
+  
+  .searchCategory select{
+    margin-left: 70px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    width: 20%;
+    padding: 12px;
+    margin: 8px 0 0 180px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  
+  .navcart{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    font-family: 'Poppins', sans-serif;
+    z-index: 100;
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    top:10%;
+    right:0;
+    height: 100%;
+    background: #fff;
+    width: 0px;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    animation-timing-function: linear;
+  }
+  
+  .navcart h2{
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  
+  
+  .fas{
+    position: relative;
+    margin-right: 20px;
+    width: 70px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .nav-item{
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  
+  
+  .navcart.toggle{
+    width: 500px;
+    transition: all 0.5s ease;
+  }
+  
+  .navcart i{
+    color: #adadad;
+    float: right;
+    transition: 0.2s;
+    margin-top: 20px;
+  }
+  
+  
+  .navcart i:hover{
+    color:#3d3d3d
+  }
+  
+  
+  .cartItem{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .cartItem img{
+    float: left;
+    display:inline-block;
+    margin-left: 20px;
+    width: 60px;
+  }
+  
+  
+  
+  .cartName{
+    margin-left: 100px;
+  }
+  
+  
+  
+  .cartItem h3{
+    overflow: hidden;
+    top: 0;
+    font-size: 15px;
+  }
+  
+  .cartItem p{
+    overflow: hidden;
+    margin-left: 100px;
+  }
+  
+  .cartItem button{
+    overflow: hidden;
+    margin-right : 10px;
+    padding: 6px;
+    border-radius: 50px;
+    margin-top: 10px;
+    float: right;
+    transition: 0.3s;
+  }
+  
+  .cartItem input[type="text"]{
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #474747;
+    margin-top:13px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left;
+    float: right;
+  }
+  
+  .navcart:hover button{
+  color: black;
+  }
+  
+  .cartItem button:hover{
+    color: white;
+    background-color: #FF6969;
+    float: right;
+  }
+  
+  .navcart button{
+    margin-top: 20px;
+  color: black;
+  }
+  
+  .total{
+    margin-top: 5px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 1;
+  }
+  
+  .totalPrice{
+    margin-top: 5px;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .navcart span{
+    display: none;
+    margin-top: 20px;
+  color: black;
+  }
+  
+  
+  
+  .foods{
+    margin-left: 12%;;
+    text-align: center;
+    width: 80%;
+    height: 700px;
+    margin-top: 50px;
+  
+  }
+  
+  .foods h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+  }
+  
+  
+  .line{
+    text-align: center;
+    width:100%;
+    height: 3px;
+    background-color: rgb(255, 105, 105);;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .dish-align{
+    display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+  }
+  
+  .dishoverlay{
+    widows: 500px;
+  }
+  
+  .dish1{
+    float: left;
+    text-align: center;
+    display: inline-block;
+    width: 22%;
+    height: 530px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    justify-content: center;
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    transition: 0.5s;
+    padding: 40px;
+    position: relative;
+  }
+  .dish1 img{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+  
+  .dish1 h2{
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .dish1 h3{
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+  }
+  
+  .dish1 p{
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .dish1 button{
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    margin-top: 200px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: #FF6969;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    padding:8px 40px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+  }
+  
+  
+  .dish1 button:hover{
+    color: white;
+    background-color:#C24F4F;
+  }
+  
+  .checkOut{
+    float: left;
+    bottom: 30px;
+    right: 100px;
+    margin-top: 40px;
+    margin-left: 50px !important;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: #FF6969;
+    color: white !important;
+    font-size: 13px;
+    text-decoration: none;
+    padding:8px 120px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+  }
+  
+  .checkOut:hover{
+    background-color:#C24F4F;
+  }
+  
+  .tempdiv{
+    display: none;
+  }
+  
+  .tempdiv form{
+    display: none;
+  }
+  
+  
+  
+  .footer {
+    z-index: 2000;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 450px;
+    background-color: #E3E3E3;
+    text-align: center;
+  }
+  
+  .footer h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .footer p{
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+  }
+  
+  
+  .footer1{
+    margin-left: 70px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 30%;
+    display: inline-block;
+  }
+  
+  .footer1 img{
+    display: inline-block;
+    border:0;
+    transition: 0.5s;
+    padding: 30px;
+    margin-top: 10px;
+    width: 60px;
+  }
+  
+  .footer1 img:hover{
+    filter: drop-shadow(5px 5px 3px #777);
+    transform: scale(1.1);
+  
+  }
+  
+  
+  .footer2{
+      float: left;
+    margin-top: 30px;
+    width: 27%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .footerMap{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .footer3{
+      float: left;
+    margin-top: 30px;
+    width: 30%;
+    margin-left: 30px;
+   display: inline-block;
+  }
+  
