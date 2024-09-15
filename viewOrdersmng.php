@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Burger Hub</title>
+    <title>Bun Hut</title>
 
     <!-- Style sheet -->
     <link rel="stylesheet" href="viewOrders.css">
