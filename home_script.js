@@ -70,7 +70,9 @@ function addMessage(message, className) {
     messageElement.classList.add("chatbot-message", className);
     messageElement.textContent = message;
     messagesContainer.appendChild(messageElement);
-    messagesContainer.scrollTop = messagesContainer.scrollHeight; // Scroll to bottom
+
+    // Scroll to the bottom of the messages container
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
 
 // Mapping intents to suitable responses
